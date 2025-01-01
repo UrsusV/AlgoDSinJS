@@ -18,6 +18,13 @@ let student = {
   isAdult: false
 };
 
+const student2 = {...student, name: 'Jane'}; // Spread operator, essentially copies the object and changes the name variable
+
 const { name, age1, isAdult } = student; //you have to follkow the same order as the object and the names as well
 console.log(name, age1, isAdult);
 DoSomething();
+
+//arrays
+let students = ['John', 'Jane', 'Doe'];
+let students2 = [...students, 'Smith']; // Spread operator, essentially copies the array and adds 'Smith' to the end
+console.log(students2);
