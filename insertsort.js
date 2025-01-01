@@ -18,5 +18,5 @@ function insertionSort(arr)
 }
 
 
-let a = [12, 11, 13, 5, 6]; // use case array
+let a = [12, 19, 13, 5, 4]; // use case array
 console.log("The Sorted array is: ", insertionSort(a));
