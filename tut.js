@@ -28,3 +28,14 @@ DoSomething();
 let students = ['John', 'Jane', 'Doe'];
 let students2 = [...students, 'Smith']; // Spread operator, essentially copies the array and adds 'Smith' to the end
 console.log(students2);
+
+let designations = ['Developer', 'Designer', 'Tester'];
+designations = designations.map((designation) => {
+  return designation+"1";  // Maps the array to a list of h1 elements
+});
+console.log(designations);//adds 1 to all the elements
+
+designations = designations.filter((designation) => {
+  return designation !== 'Developer1'; // Filters out the 'Developer1' element
+});
+console.log(designations); //filters out the developer1
